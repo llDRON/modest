@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Quattrocento+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -9,37 +11,30 @@
 }
 
 .container {
+  display: flex;
+  justify-content: space-between;
   width: 1170px;
-  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.row {
+.logo {
   display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-[class*=col-] {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.col-md-3 {
-  width: 25%;
-}
-
-.col-md-6 {
-  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  width: 150px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .menu {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  padding-top: 26px;
-  padding-bottom: 25px;
+  justify-content: center;
+  align-items: center;
   -moz-column-gap: 11px;
        column-gap: 11px;
 }
@@ -81,7 +76,7 @@
   border-radius: 4px;
   height: 30px;
   width: 195px;
-  padding: 0px 40px 0px 0px;
+  padding: 0px 50px 0px 5px;
   color: #a4aead;
 }
 
@@ -126,4 +121,49 @@
   line-height: 30px;
   color: #a4aead;
   padding-left: 10px;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  height: 660px;
+  background-image: url(images/slider-image-2.png);
+}
+
+.slider-text {
+  display: flex;
+  align-items: center;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 36px;
+  width: 1000px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.slider-p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #ccd0d7;
+  align-self: center;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header-form-search {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    z-index: 10;
+  }
 }/*# sourceMappingURL=style.css.map */
