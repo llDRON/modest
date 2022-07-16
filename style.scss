@@ -176,7 +176,7 @@
 
 // tablet >> sm 768px
 
-@media(min-width:768px) {
+@media(min-width:768px) and (max-width: 991px) {
     .container{
         max-width: 720px;
     }
@@ -227,6 +227,24 @@
     .col-sm-12{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .header{
+        height: 120px;
+        position: unset;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+    }
+    .hidden-xs{
+        display: none;
+    }
+    .slider{
+        display: flex;
+        align-items: start;
+        padding-top: 25px;
+        background-position: center;
     }
 }
 
@@ -284,7 +302,12 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    
+    .search{
+        width: 135px;
+    }
+    .header{
+        height: 80px;
+    }
 }
 
 // desktop >> lg
@@ -341,6 +364,9 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .search{
+        width: 170px;
+    }
 
 }
 
@@ -374,7 +400,7 @@
         text-align: center;
     }
     .slider-btn{
-        width: 300px;
-        margin: 10px auto;
+        width: 280px;
+        margin: 10px;
     }
 }
