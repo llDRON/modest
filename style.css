@@ -148,6 +148,110 @@
   border: #23b7a4 2px solid;
 }
 
+section {
+  display: flex;
+  height: 611px;
+}
+
+.section-h1-container {
+  display: flex;
+  align-items: center;
+  height: 175px;
+  gap: 12px;
+}
+
+.section-h1-square {
+  width: 10px;
+  height: 35px;
+  background-color: #a4aead;
+}
+
+.section-h1 {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 36px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.modest-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #a4aead;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.modest-bold-text {
+  font-weight: bold;
+  color: #8d8f92;
+}
+
+.social-links {
+  display: flex;
+  gap: 1px;
+  margin-top: 55px;
+}
+
+.social-img {
+  width: 60px;
+  height: 60px;
+  background-color: #c8cdd0;
+  cursor: pointer;
+}
+
+.social-img:first-child:hover {
+  background-color: #1877f2;
+}
+
+.social-img:nth-child(2):hover {
+  background-color: #44bdec;
+}
+
+.social-img:nth-child(3):hover {
+  background-color: #d34d41;
+}
+
+.social-img:nth-child(4):hover {
+  background-color: #e84c88;
+}
+
+.social-img:last-child:hover {
+  background-color: #1377ff;
+}
+
+.modest-right-container {
+  display: flex;
+  gap: 15px;
+  height: 88px;
+  margin-bottom: 30px;
+}
+
+.green-square {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  background-color: #49d2bc;
+  color: white;
+}
+
+.modest-right-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #8d8f92;
+}
+
+.modest-right-text-title {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 18px;
+  color: #1d2126;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .col-xs-1 {
   flex: 0 0 8.33333%;
   max-width: 8.33333%;
@@ -404,6 +508,7 @@
   }
   .menu {
     overflow-x: scroll;
+    justify-content: unset;
   }
   .logo {
     display: flex;
