@@ -281,8 +281,28 @@ section {
   text-transform: uppercase;
 }
 
-.team-container {
+.team-social {
   display: flex;
+  gap: 1px;
+  position: relative;
+  top: -250px;
+  left: 55px;
+}
+
+.team-social-img {
+  background-color: #3a454d;
+}
+
+.team-social-img:hover {
+  background-color: #56656f;
+}
+
+.team-member:hover .team-member-info {
+  background-color: #3a454d;
+  color: white;
+}
+.team-member:hover .team-member-name {
+  color: white;
 }
 
 .col-xs-1 {
