@@ -287,6 +287,7 @@ section {
   position: relative;
   top: -250px;
   left: 55px;
+  visibility: hidden;
 }
 
 .team-social-img {
@@ -303,6 +304,9 @@ section {
 }
 .team-member:hover .team-member-name {
   color: white;
+}
+.team-member:hover .team-social {
+  visibility: visible;
 }
 
 .col-xs-1 {

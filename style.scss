@@ -246,6 +246,7 @@ section{
     position: relative;
     top: -250px;
     left: 55px;
+    visibility: hidden;
 }
 .team-social-img{
     background-color: #3a454d;
@@ -260,6 +261,9 @@ section{
     }
     .team-member-name{
         color: white;
+    }
+    .team-social{
+        visibility: visible;
     }
 }
 
