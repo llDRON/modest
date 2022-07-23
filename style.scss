@@ -301,21 +301,27 @@
 }
 .lovely-work-pic1{
     background-image: url(images/lovely1.png);
+    background-repeat: no-repeat;
 }
 .lovely-work-pic2{
     background-image: url(images/lovely2.png);
+    background-repeat: no-repeat;
 }
 .lovely-work-pic3{
     background-image: url(images/lovely3.png);
+    background-repeat: no-repeat;
 }
 .lovely-work-pic4{
     background-image: url(images/lovely4.png);
+    background-repeat: no-repeat;
 }
 .lovely-work-pic5{
     background-image: url(images/lovely5.png);
+    background-repeat: no-repeat;
 }
 .lovely-work-pic6{
     background-image: url(images/lovely6.png);
+    background-repeat: no-repeat;
 }
 
 .plus{
@@ -365,6 +371,7 @@
 }
 .btn-show-me-more:hover{
     background-color: rgba(255, 255, 255, 0.200);
+    cursor: pointer;
 }
 
 // What we do section
@@ -388,6 +395,27 @@
     font-size: 14px;
     color: #a4aead;
     height: 80px;
+    line-height: 25px;
+}
+
+// Features section
+
+.features-section{
+    height: 730px;
+}
+.features-title{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    height: 90px;
+    line-height: 90px;
+}
+.features-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #a4aead;
+    text-align: justify;
     line-height: 25px;
 }
 
@@ -518,6 +546,13 @@
     }
     .social-links{
         margin-bottom: 30px;
+    }
+    .lovely-work-section{
+        height: 1200px;
+        margin-top: 500px;
+    }
+    .features-section{
+        height: 1450px;
     }
 }
 
@@ -695,5 +730,12 @@
     .lovely-work-section{
         margin-top: 1250px;
         height: 2000px;
+    }
+    .features-section{
+        height: 1400px;
+    }
+    .features-img{
+        width: 300px;
+        margin-top: 15px;
     }
 }
