@@ -251,12 +251,13 @@
 .meet-the-team-section {
   display: flex;
   justify-content: center;
-  height: 650px;
+  border-top: #a4aead 1px solid;
 }
 
 .team-member {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .team-member-info {
@@ -267,7 +268,7 @@
   background-color: #e1e6ea;
   padding: 20px;
   line-height: 20px;
-  margin-top: -2px;
+  margin-top: -4px;
 }
 
 .team-member-name {
@@ -291,6 +292,23 @@
   background-color: #3a454d;
 }
 
+.team-img {
+  display: block;
+  position: relative;
+}
+
+.team-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.4);
+  visibility: hidden;
+}
+
 .team-social-img:hover {
   background-color: #56656f;
 }
@@ -305,11 +323,13 @@
 .team-member:hover .team-social {
   visibility: visible;
 }
+.team-member:hover .team-img-overlay {
+  visibility: visible;
+}
 
 .lovely-work-section {
   display: flex;
   flex-wrap: wrap;
-  height: 899px;
   background-color: #3a454d;
 }
 
@@ -328,50 +348,33 @@
 }
 
 .lovely-work-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  height: 265px;
-  margin-bottom: 30px;
+  height: 295px;
 }
 
-.lovely-work-pic1 {
-  background-image: url(images/lovely1.png);
-  background-repeat: no-repeat;
+.lovely-img {
+  display: block;
+  position: relative;
 }
 
-.lovely-work-pic2 {
-  background-image: url(images/lovely2.png);
-  background-repeat: no-repeat;
-}
-
-.lovely-work-pic3 {
-  background-image: url(images/lovely3.png);
-  background-repeat: no-repeat;
-}
-
-.lovely-work-pic4 {
-  background-image: url(images/lovely4.png);
-  background-repeat: no-repeat;
-}
-
-.lovely-work-pic5 {
-  background-image: url(images/lovely5.png);
-  background-repeat: no-repeat;
-}
-
-.lovely-work-pic6 {
-  background-image: url(images/lovely6.png);
-  background-repeat: no-repeat;
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
 }
 
 .plus {
-  align-self: center;
-  color: white;
-  font-size: 40px;
-  font-weight: bolder;
-  padding-bottom: 80px;
+  background-image: url(images/plus.png);
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -180px;
+  left: 150px;
   visibility: hidden;
 }
 
@@ -383,8 +386,9 @@
   background-color: #292f36;
   height: 60px;
   line-height: 60px;
-  width: 100%;
   padding-left: 20px;
+  position: relative;
+  top: -110px;
   visibility: hidden;
 }
 
@@ -397,11 +401,15 @@
 .lovely-work-item:hover .partnership-guidlines {
   visibility: visible;
 }
+.lovely-work-item:hover .img-overlay {
+  visibility: visible;
+}
 
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  align-items: center;
+  height: 135px;
 }
 
 .btn-show-me-more {
@@ -419,10 +427,6 @@
 .btn-show-me-more:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
-}
-
-.what-we-do-section {
-  height: 895px;
 }
 
 .what-we-do-item {
@@ -446,10 +450,6 @@
   line-height: 25px;
 }
 
-.features-section {
-  height: 730px;
-}
-
 .features-title {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 18px;
@@ -465,6 +465,7 @@
   color: #a4aead;
   text-align: justify;
   line-height: 25px;
+  margin-bottom: 125px;
 }
 
 .col-xs-1 {
@@ -756,9 +757,6 @@
     width: 280px;
     margin: 10px;
   }
-  .social-links {
-    margin-bottom: 30px;
-  }
   .section-h1-container {
     display: flex;
     justify-content: center;
@@ -770,15 +768,29 @@
   .modest-right-container {
     height: 120px;
   }
-  .lovely-work-section {
-    margin-top: 1250px;
-    height: 2000px;
+  .social-links {
+    margin-bottom: 20px;
   }
-  .features-section {
-    height: 1400px;
+  .team-img img {
+    width: 100%;
+  }
+  .lovely-img img {
+    width: 100%;
+  }
+  .team-member {
+    margin: 0;
+    height: 410px;
+  }
+  .lovely-work-item {
+    height: 220px;
+  }
+  .what-we-do-item {
+    height: 250px;
   }
   .features-img {
-    width: 300px;
-    margin-top: 15px;
+    width: 100%;
+  }
+  .features-text {
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
