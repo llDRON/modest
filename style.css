@@ -468,6 +468,110 @@
   margin-bottom: 125px;
 }
 
+.contact-information-h2 {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  height: 115px;
+  line-height: 115px;
+}
+
+.contact-information-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #a4aead;
+  margin-bottom: 30px;
+}
+
+.contact {
+  height: 200px;
+}
+
+.modal-container {
+  position: relative;
+  top: -250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 400px;
+  background-color: white;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #8d8f92;
+}
+
+.modal-name {
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+.modal-name input {
+  width: 240px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.modal-email {
+  margin-top: 30px;
+}
+
+.modal-email input {
+  width: 240px;
+  height: 40px;
+}
+
+.modal-input {
+  background-color: #eaeef1;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.modal-input:focus {
+  outline: none;
+}
+
+.modal-message {
+  height: 250px;
+}
+
+textarea {
+  resize: none;
+}
+
+.modal-btn {
+  width: 150px;
+  height: 44px;
+  margin-top: 30px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #23b7a4;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer {
+  height: 95px;
+  background-color: #3a454d;
+}
+
+.footer-row {
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a img {
+  width: 36px;
+  height: 36px;
+}
+
 .col-xs-1 {
   flex: 0 0 8.33333%;
   max-width: 8.33333%;
