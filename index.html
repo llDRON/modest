@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MODEST</title>
     <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,16 +46,24 @@
         </div>
     </header>
     <main>
+        <div class="slider-container">
+            <div class="slider-block">
+                <div><img class="slides" src="images/Slide1.jpg" alt=""></div>
+                <div><img class="slides" src="images/Slide2.jpg" alt=""></div>
+                <div><img class="slides" src="images/Slide3.jpg" alt=""></div>
+                <div><img class="slides" src="images/Slide4.jpg" alt=""></div>
+              </div>
+        </div>
         <div class="slider">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 class="slider-h1">Welocome to our marketplace</h1>
+                        <h1 class="slider-h1">Welcome to our marketplace</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7">
-                        <p class="slider-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ad, laboriosam voluptatum saepe rerum iusto.</p>
+                        <p class="slider-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Corrupti ad, <br> laboriosam voluptatum saepe rerum iusto.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -205,7 +217,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="lovely-work-item">
                             <div class="lovely-img">
                                 <img src="images/lovely1.png" alt="">
@@ -215,7 +227,7 @@
                         <div class="partnership-guidlines">Partnership guidlines</div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="lovely-work-item">
                             <div class="lovely-img">
                                 <img src="images/lovely2.png" alt="">
@@ -225,7 +237,7 @@
                         <div class="partnership-guidlines">Partnership guidlines</div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="lovely-work-item">
                             <div class="lovely-img">
                                 <img src="images/lovely3.png" alt="">
@@ -237,7 +249,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="lovely-work-item">
                             <div class="lovely-img">
                                 <img src="images/lovely4.png" alt="">
@@ -247,7 +259,7 @@
                         <div class="partnership-guidlines">Partnership guidlines</div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="lovely-work-item">
                             <div class="lovely-img">
                                 <img src="images/lovely5.png" alt="">
@@ -257,7 +269,7 @@
                         <div class="partnership-guidlines">Partnership guidlines</div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="lovely-work-item">
                             <div class="lovely-img">
                                 <img src="images/lovely6.png" alt="">
@@ -428,7 +440,7 @@
                                 </div>
                                 <div class="modal-message">
                                     <p class="modal-text">Your message</p>
-                                    <textarea class="modal-input" name="" id="" cols="65" rows="10"></textarea> <br>
+                                    <textarea class="modal-input text-area" name="" id="" cols="65" rows="10"></textarea> <br>
                                     <button class="modal-btn" type="submit">Send message</button>
                                 </div>
                                 
@@ -459,6 +471,10 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
 
